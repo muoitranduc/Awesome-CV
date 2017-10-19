@@ -18,7 +18,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[12pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -35,10 +35,10 @@
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{333333}
+\definecolor{graytext}{HTML}{5D5D5D}
+\definecolor{lighttext}{HTML}{999999}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -46,6 +46,9 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+% \renewcommand*{\cvhonor}[5]{%
+%   \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2}     \honortitlestyle{#3} & \honorlocationstyle{#5} \\
+% }
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -54,12 +57,12 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{Tran Duc}{Muoi}
-\position{PhD student}
+\position{a.k.a Muoi Tran --- PhD student}
 \address{COM2 B1-02, 15 Computing Drive, Singapore 117418}
 
 \mobile{(+65) 83561175}
 \email{muoitran@comp.nus.edu.sg}
-\skype{muoitranduc}
+% \skype{muoitranduc}
 \extrainfo{\href{http://www.comp.nus.edu.sg/~muoitran/}{www.comp.nus.edu.sg/\textasciitilde{}muoitran}}
 
 % \gitlab{gitlab-id}
@@ -83,7 +86,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Muoi Tran~~~·~~~Résumé}
+  {Muoi Tran~~~·~~~CV}
   {\thepage}
 
 
@@ -92,15 +95,20 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
-\input{resume/poster.tex}
+\input{resume/education.tex}
 \input{resume/experience.tex}
 \input{resume/honors.tex}
+
+\input{resume/publications.tex}
+\input{resume/poster.tex}
+\input{resume/teaching.tex}
+
 % \input{resume/presentation.tex}
 
 % \input{resume/committees.tex}
-\input{resume/education.tex}
-\input{resume/extracurricular.tex}
 
+\input{resume/extracurricular.tex}
+\input{resume/reference.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
