@@ -20,6 +20,7 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[12pt, a4paper]{awesome-cv}
 
+\usepackage{fontspec}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=1.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -29,16 +30,16 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-darknight}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-\definecolor{darktext}{HTML}{414141}
-\definecolor{text}{HTML}{333333}
-\definecolor{graytext}{HTML}{5D5D5D}
-\definecolor{lighttext}{HTML}{999999}
+\definecolor{darktext}{HTML}{131A28}
+\definecolor{text}{HTML}{131A28}
+\definecolor{graytext}{HTML}{131A28}
+\definecolor{lighttext}{HTML}{131A28}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -56,9 +57,9 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-\name{Tran Duc}{Muoi}
-\position{a.k.a Muoi Tran --- Ph.D. Candidate}
-\address{COM2 B1-02, 15 Computing Drive, Singapore 117418}
+\name{Tran Duc Muoi}{(Muoi Tran)}
+% \position{a.k.a Muoi Tran --- Ph.D. Candidate}
+\address{Office: COM2 B1-02, 15 Computing Drive, Singapore 117418}
 
 \mobile{(+65) 83561175}
 \email{muoitran@comp.nus.edu.sg}
@@ -80,7 +81,7 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader[L]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
